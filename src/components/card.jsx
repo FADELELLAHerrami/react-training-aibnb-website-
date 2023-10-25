@@ -6,16 +6,16 @@ export default function Card(props){
         
         <div className="card">
         {console.log(starImg)}
-            {props.item.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
-            <img src={"/src/assets/images/"+props.item.coverImg} className="card--image" />
+            {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
+            <img src={"/src/assets/images/"+props.coverImg} className="card--image" />
             <div className='card--stats'>
                 <img src={starImg} className='card--star' />
-                <span>{props.item.rating}</span>
-                <span className='gray'> ({props.item.reviewCount}) .</span>
-                <span className='gray'>{props.item.country}</span>
+                <span>{props.rating}</span>
+                <span className='gray'> ({props.reviewCount}) .</span>
+                <span className='gray'>{props.country}</span>
             </div>
-            <p className='card--title'>{props.item.title}</p>
-            <p className='card--price'><span className='bold'>From {props.item.price} $</span>/ person</p>
+            <p className='card--title'>{props.title}</p>
+            <p className='card--price'><span className='bold'>From {props.price} $</span>/ person</p>
         </div>
     )
 }

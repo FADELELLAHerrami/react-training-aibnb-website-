@@ -13,11 +13,11 @@ export default function App() {
       <div className='card--list'>
       {
         data.map((data)=>{
-          {console.log(data)}
           return(
+            
             <Card
               key = {data.id}
-              item = {data}
+              {...data}
             />
           )
         })
