@@ -31,7 +31,8 @@ section {
   width: 175px;
   font-size: 12px;
   margin-left: 20px;
-  flex: 0 0 auto;         
+  flex: 0 0 auto;  
+  position: relative;       
 }
 .card--image {
   width: 100%;
@@ -58,4 +59,13 @@ section {
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: scroll;
+}
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
