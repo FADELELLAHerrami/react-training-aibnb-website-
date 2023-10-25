@@ -13,15 +13,11 @@ export default function App() {
       <div className='card--list'>
       {
         data.map((data)=>{
+          {console.log(data)}
           return(
             <Card
-              coverImg= {`/src/assets/images/${data.coverImg}`}
-              rating={data.stats.rating}
-              reviewCount={data.stats.reviewCount}
-              country={data.location}
-              title={data.title}
-              price={data.price}
-              openSpots={data.openSpots}
+              key = {data.id}
+              item = {data}
             />
           )
         })
