@@ -1,1 +1,1 @@
-![my portfolio](airbnbcap.PNG)
+![my portfolio](airbnbcup.PNG)
